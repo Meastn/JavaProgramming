@@ -17,7 +17,7 @@ public class ExtractSpecialCharacters {
         System.out.println("letters = " + letters);
         letters.removeIf(p -> !Character.isLetter(p));
         System.out.println(letters);
-
+        System.out.println("Does letters matters?");
         }
 
         
