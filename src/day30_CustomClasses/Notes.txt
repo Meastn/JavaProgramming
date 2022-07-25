@@ -1,0 +1,18 @@
+
+Custom Class Topics:
+
+1. Instance variables & instance methods
+2. toString,
+3. Constructors
+4. Statics
+....
+
+Tasks:
+Attributes:
+brand, model, color, year, price
+
+Actions:
+drive (), start(), stop(), toString(9, setInfo()
+
+Car objects:
+create 3 car objects
