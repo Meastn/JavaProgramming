@@ -1,0 +1,46 @@
+
+
+Scrum Task:
+
+Create a class called Tester
+
+Attributes:
+name, employeeID, JobTitle, Salary
+Add a constructor that can set all the fields
+
+Actions:
+smokeTesting(), creatingTicket(), dailyStandUp (), toString ()
+
+create a class called Developer
+Attributes:
+name, employeeID, JobTitle, Salary
+Add a constructor that can set all the fields
+
+Actions:
+coding(), unitTesting(), fixingBug(), toString ()
+
+create a class called ScrumTeam:
+
+Attributes:
+String PO, BA, SM;
+ArrayList <Tester> testersList = new ArrayList<>();
+ArrayList <Developer> devsList = new ArrayList<>();
+int daysOfSprint;
+
+Add a constructor that can set all the fields of PO, BA and SM
+
+Actions :
+
+addTester (Tester tester) : adds the given tester to the testers Arraylist
+addTesters (Tester [] testers): adds the given testers to the testers ArrayList
+addTester (Developer developer) : adds the given developer to the developers Arraylist
+addTesters (Developer [] developers): adds the given developers to the developers ArrayList
+removeTester (Long employeeId) : removes the given tester from the testers ArrayList
+removeDeveloper (Long employeeId) : removes the given developer from the developers ArrayList
+toString (): prints number of testers & developers, PO name, SM name, BA name
+
+
+Create a class called MyScrumTeam:
+1. create an array of Testers and add the testers from your group
+2. create an array of Developers and add the developers from your group
+3. crete an object of ScrumTeam and store the testers & developers above to the scrum team
