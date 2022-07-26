@@ -9,13 +9,11 @@ public class ScrumTeam {
     public ArrayList <Testers> testersList = new ArrayList<>();
     public ArrayList <Developers> devsList = new ArrayList<>();
 
-    public ScrumTeam(String PO, String BA, String SM, int daysOfSprint, ArrayList<Testers> testersList, ArrayList<Developers> devsList) {
+    public ScrumTeam(String PO, String BA, String SM, int daysOfSprint) {
         this.PO = PO;
         this.BA = BA;
         this.SM = SM;
         this.daysOfSprint = daysOfSprint;
-        this.testersList = testersList;
-        this.devsList = devsList;
     }
 
 
