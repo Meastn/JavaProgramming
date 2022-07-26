@@ -17,6 +17,22 @@ drive (), start(), stop(), toString(9, setInfo()
 Car objects:
 create 3 car objects
 
+Task (Employee):
+
+Attributes:
+name, ID, gender, jobTitle, salary, isFullTime (boolean)
+Actions:
+toString() : to be able to print each employee object
+setInfo() : to be able to set all attributes
+work() ...
+
+Create a CapitalOneBank class
+1. create 5 employee objects
+2. store those 5 empyee objects into an array
+3. how many employees are full time employees?
+4. what is the minimum salary?
+5. what is the maximum salary?
+
 
 this. keyword to more easily create methods
 if he instance variable name is same with the setinfo method variable name we use this
