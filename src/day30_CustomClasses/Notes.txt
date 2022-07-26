@@ -16,3 +16,7 @@ drive (), start(), stop(), toString(9, setInfo()
 
 Car objects:
 create 3 car objects
+
+
+this. keyword to more easily create methods
+if he instance variable name is same with the setinfo method variable name we use this
