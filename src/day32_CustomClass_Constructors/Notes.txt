@@ -1,0 +1,15 @@
+
+
+Constructor Overloading:
+We can create many constructors in the same class using the method overloading
+that we used in Method Overloading,
+But to do this we have to call one constructor from another,
+this () we use this () keyword to call another constructor
+PS.= this. is used to call instance variable & instance methods
+Constructor Overloading creates a chain of constructors that call the one before and be called by the next
+
+CONSTRUCTOR CALL:
+1. Constructor can not be called by its name (this () need to be used)
+2. Only a constructor can call another constructor
+3. Constructor call MUST be at the first stage. Otherwise it gives a COMPILE ERROR
+4. One Constructor can not call more than one constructor at a time

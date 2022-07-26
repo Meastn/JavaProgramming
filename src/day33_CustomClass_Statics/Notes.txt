@@ -1,0 +1,12 @@
+
+TOPICS:
+1. Creating a multiple class in a file
+2. Statics
+        -variables
+        -methods
+        -static import
+
+RECAP (MULTIPLE CONSTRUCTORS)
+
+
+
