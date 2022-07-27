@@ -55,7 +55,7 @@ public class Employee {
         this.salary = salary;
     }
 
-    // WRONG WAY OF CREATIN CONSTRUCTOR FOR ENCAPSULATED DATA
+    // WRONG WAY OF CREATING CONSTRUCTOR FOR ENCAPSULATED DATA
     /* public Employee(String name, char gender, int age, double salary) {
         this.name = name;
         this.gender = gender;

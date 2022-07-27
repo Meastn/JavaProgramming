@@ -1,0 +1,72 @@
+
+INHERITANCA TOPIC:
+1. is a relation
+2. extends keywods
+3. super keyword & constructor
+4. Types of Inheritance
+5. Is a relation vs. Has a Relation
+6. Method Overriding
+
+TODAY (DAY 36)
+IS A RELATION
+EXTENDS KEYWORS
+
+TOMORROW (DAY 37)
+SUPER KEYWORD & CONSTRUCTOR
+TYPES OF INHERITANCE
+
+DAY 38
+IS RELATION VS. HAS A RELATION
+METHOD OVERRIDING
+
+DAY 39
+IMPLEMENT  BOTH INHERITANCE AND ENCAPSULATION
+
+INHERİTANCE
+1. used for creating an "is a" relationship among classes
+2.when "is a " relationship exists between objects, it means that the specialized object
+has all the characteristics of the general object
+3. It allows one class to inherit the features (variables&methods) of another class
+
+SUPER CLASS (PARENT CLASS)
+A) ANIMAL (NAME, BODY, SIZE, WEİGHT, EAT, MOVE)
+
+SUB CLASSES (CHILD CLASSES)
+A1) DOG = ANIMAL + (LEGS, BARK)
+A2) CAT  = ANIMAL + (LEGS, MEOW, SCRATCH)
+A3) FISH = ANIMAL + (SWIM)
+
+
+4. KEYWORD used for inheritance is EXTENDS
+
+public class Dog extends Animal {
+
+}
+
+5. SUPER CLASS passes/ gives its characteristics to SUB CLASSES
+6. SUB CLASSES takes the characteristics of their SUPER CLASS but also have their own
+attributes, methods etc.
+7. ALL the ACCESSIBLE (private objects and methods can not be seen) variables & methods (depending the ACCESS MODIFIER)
+8. Constructors can not be inherited since it has to carry the same name with the class it is defined in
+9. But CHILD can call PARENTS Constructor methods
+10. Difference between importing and inheriting
+    import : borrows    vs.  extends : owns
+    Inherit -> pass it through, import -> let using
+
+TASK
+
+Create a super class called Animal
+    Variables = name, breed, gender, size, age, color
+    Methods = setInfo(), eat(), drink(), move(), sleep(), toString()
+
+Create sub classes (child classes) of dog, cat, tiger
+
+Dog extends Animal:
+        bark ()
+Cat extends Animal:
+        scratch ()
+Tiger extends Animal:
+        roar ()
+        hunt ()
+Fish extends Animal:
+        swim ()

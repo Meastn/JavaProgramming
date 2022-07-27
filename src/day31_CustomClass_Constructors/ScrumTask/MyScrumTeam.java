@@ -1,7 +1,5 @@
 package day31_CustomClass_Constructors.ScrumTask;
 
-import java.util.Arrays;
-
 public class MyScrumTeam {
     public static void main(String[] args) {
 

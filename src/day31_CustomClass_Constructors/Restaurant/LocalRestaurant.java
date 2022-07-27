@@ -1,9 +1,5 @@
 package day31_CustomClass_Constructors.Restaurant;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-
 public class LocalRestaurant {
     public static void main(String[] args) {
         Restaurant restaurant = new Restaurant("Kebapçı Hasan", "5th Ave",4);
