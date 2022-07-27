@@ -25,15 +25,27 @@ public class Person {
 
     }
 
-    public void printPlanetName (){
-        System.out.println(planet);
+    public static void printPlanetName (){  // STATIC METHOD IT USES ONLY A STATIC VARIABLE THERE FORE BEST TO MAKE IT STATIC ALSO
+        System.out.println("Planet name is : " + planet);
     }
 
-    public static void main(String[] args) {
-        printPlanetName
+    public void eat (String food){  // THIS METHOD USES AN INSTANCE VARIABLE (NAME) THEREFORE CAN NOT BE A STATIC METHOD
+        System.out.println(name + " is eating " + food);
     }
 
+    public void drink (String drink){ // THIS METHOD USES AN INSTANCE VARIABLE (NAME) THEREFORE CAN NOT BE A STATIC METHOD
+        System.out.println(name + " is drinking " + drink);
+    }
 
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", gender=" + gender +
+                ", language='" + language + '\'' +
+                ", planet='" + planet + '\'' + // YOU CAN ADD STATIC VARIABLES INTO TOSTRING
+                '}';
+    }
 }
 
 
