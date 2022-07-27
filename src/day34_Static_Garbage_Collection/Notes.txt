@@ -1,0 +1,96 @@
+STATICS
+1. Static Variable
+2. Static Method
+3. Static Block
+4. Static Class
+
+1. Dont use main method to declare static variables
+2. Main method accepts static variables and can initialize them
+3. Static variables can be used within the class, BUT ALSO OUTSIDE the class
+4. If we put static variables within the main method, we WONT BE ABlE TO USE THEM OUTSIDE
+5. It is always better to use STATIC BLOCK to declare and initialize static variables
+6. We also need STATIC BLOCK if we are unable to initialize a static variable in ONE STEP
+7. ie. we can get a value from an EXCEL file which will need more than one step get, read, initialize
+8. STATIC BLOCK is the first to be run by the compiler even before the MAIN METHOD
+9. STATIC BLOCK is run only once, so we dont use it for instance variables which need to run more than once
+
+
+STATIC CLASS
+1. Interview question "Can a class be static?"
+2. Answer is not directly yes or no, it depends on certain conditions
+3. The precondition for a STATIC CLASS is
+    a. There has to be a nested CLASS within the class
+    b. Since the OUTER CLASS can never be STATIC
+    c. But the inner CLASS might be
+
+4. Accessing inner class
+    a. ClassA.ClassB.method1();
+5. A static class can not accept instance variables
+6. Always avoid using STATIC CLASSES. They are useless
+
+STATIC METHOD
+1. ADVANTAGE OF STATIC METHOD is it can be accessed through class name
+2. It does not need an object to be accessible
+3. We won't use STATIC METHOD If we will not use any instance variable or instance  methods inside the method
+4. Then we can prefer to make it STATIC
+
+STATIC IMPORT vs. REGULAR IMPORT
+PS. We use import if the method is in another PACKAGE
+ regular import:
+        import packageName.className;
+        import packageName.*;
+ Static import:
+ Static import helps us to import only the static members (variables & methods) within a CLASS and leave the rest
+        import static packageName.className.StaticMember; -- imports only one STATIC MEMBER
+        import static packageName.className.*;   -- imports all the static members in a class
+
+1. If we do a static import we can directly call the member without mentioning its class within the code
+    ie. pi in order calling it as Circle.pi
+
+
+GARBAGE COLLECTION
+1. DESTROY the object that are not needed any more and SAVE MEMORY
+2. Automatically done by the JVM GARBAGE COLLECTOR automatically
+3. When GARBAGE COLLECTOR identifis an object as garbage it calls FINALIZE METHOD
+4. Any unreferenced object will be identified as a garbage
+5. You can NULLIFY an object to make it elligible for GARBAGE COLLECTION. ONLY FOR NON-PRIMITIVE DATA TYPES
+        DOG d = new DOG; create an object
+        d = null; object is nullified and tagged for garbage collection
+        assigning NULL value means no initializign takes place and it does not create an object.
+        0 is a value, "" is a value, NULL is not
+        String str = "Wooden Spoon"  // the object is referenced and NOT ELLIGIBLE for garbage collection
+        str = null; // THis object no more has a reference and will be GARBAGE COLLECTED
+6. Unreferencing:
+    1. use NULL keyword
+        String str = "Java";
+        str = null; --> elligible for garbage collection
+    2.  Create a new object
+        String str = "Java";  --> elligible for garbage collection
+        str = "Python";
+
+ACCESS MODIFIERS:
+1. Define the accessibility of a member (Variable, method)
+2. Different types of access modifiers have different visibilities and access
+2. 4 access modifiers for variables, constructor and methods
+    a. public
+    b. protected
+    c. default
+    d. private
+3. A top level java class has 2 access modifiers
+    a. public
+    b. default
+
+    ACCESS MODIFIER                         CLASS       PACKAGE     SUBCLASS        WORLD
+    public                                  yes         yes         yes             yes
+    protected                               yes         yes         yes             no
+    default (also called no modifier)       yes         yes         no              no
+    private                                 yes         no          no              no
+
+
+private : only reachable within the CLASS
+default : only reachable within the PACKAGE
+public  : always reachable , no restrictions
+
+4. There can only be 1 public class inside a class
+5. It has to be public
+6. subclasses inside public class might be default
