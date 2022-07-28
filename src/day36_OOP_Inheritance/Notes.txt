@@ -53,7 +53,55 @@ attributes, methods etc.
     import : borrows    vs.  extends : owns
     Inherit -> pass it through, import -> let using
 
-TASK
+
+DEFINITION : Inheritance : to build IS A relation between classes (parent to child, superclass to subclass)
+
+easiest way to get rich
+child class (sub class) : can inherit all the variables & methods from the parent class plus can have its own specific
+variables and methods
+
+parent class (Super class) : can not inherit anything from child class. Contains all COMMON features that are meant to
+be inherited by the CHILDS
+
+Advantages:
+    less code
+    improves the reusability
+    clean
+    less memory usage
+    easy to maintain
+
+IF THE PARENT CLASS HAS A DEFAULT CONSTRUCTOR WE DONT HAVE TO CALL THE CONSTRUCTOR OF THE PARENT CLASS FROM THE CHILD
+CLASSES. BUT IF THE PARENT CLASS HAS A SPECIFICALLY CREATED CONSTRUCTOR YOU HAVE TO CREATE A CHILD CLASS CONSTRUCTOR
+USING THE SUPER KEYWORD
+YOU CAN ADD CLASS SPECIFIC INSTANCE VARIABLES WITHIN THE SUPER CONSTRUCTOR MANUALLY USING this. keyword
+
+SUPER KEYWORD: refers to the instances of the Current
+        this. : it calls instance variables and instance methods (when one of the lcal var has the same name with instance variables
+        this(): calls the constructor of the current class. Have to be the first.
+
+
+super keyword has similar functionaliyt with this () . it refers to the parent of the current class
+        super. : it calls the instance variables and instance methods of PARENT CLASS
+        super () : it calls the CONSTRUCTOR OF THE PARENT CLASS
+
+SINGLE LEVEL INHERITANCE  : One super class has one child class
+HIERARCHICAL INHERITANCE : A super class has more than one child class
+MULTILEVEL INHERITANCE
+MULTIPLE INHERITANCE : IN JAVA A SUB CLASS CAN NOT INHERIT MORE THAN ONE SUPER CLASS
+
+class Person { // person : a
+a
+}
+
+class Employee extends Person { // employee : a, b   ( All employees are persons)
+b
+}
+
+class Tester extends Employee { // tester : a, b, c ( All Testers are Employees and persons)
+c
+}
+------------
+TASK 1
 
 Create a super class called Animal
     Variables = name, breed, gender, size, age, color
@@ -70,3 +118,18 @@ Tiger extends Animal:
         hunt ()
 Fish extends Animal:
         swim ()
+
+
+TASK 2
+Create an Employee SUPER CLASS
+variables = name, gender, age, jobTitle, id, salary, companyName
+methods   = work(), toString(), setInfo()
+
+Create SUB CLASSES of Tester, Developer, Driver
+
+
+TASK 3:
+PHONE Task
+ScrumTeam Task
+
+
