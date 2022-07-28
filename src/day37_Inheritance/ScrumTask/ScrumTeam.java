@@ -1,12 +1,57 @@
 package day37_Inheritance.ScrumTask;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class ScrumTeam {
 
-    public static void main(String[] args) {
+    public ProductOwner PO;
+    public BusinessAnalyst BA;
+    public ScrumMaster SM;
 
-        Developer dv1 = new Developer("Bob", 34, 'M',"Mobile Developer", 10011, 100000,"CodeBulls");
-        Developer dv2 = new Developer("James", 36, 'M',"Java Developer", 10012, 11000,"CodeBulls");
-        Tester  tst1= new Tester("Caroline", 27, 'F', "QA", 10013, 90000, "CodeBulls");
 
+    public ArrayList <Developer> developers = new ArrayList<>();
+    public ArrayList <Tester> testers = new ArrayList<>();
+
+    public ScrumTeam(ProductOwner PO, BusinessAnalyst BA, ScrumMaster SM) {
+        this.PO = PO;
+        this.BA = BA;
+        this.SM = SM;
+    }
+
+
+    public void addTester(Tester tester) {
+        testers.add(tester);
+    }
+    public void addTesters (Tester [] testers){
+        this.testers.addAll(Arrays.asList(testers));
+    }
+
+    public void removeTester (int id) {
+        testers.removeIf(p -> p.id == id);
+    }
+    public void addDeveloper(Developer developer) {
+        developers.add(developer);
+    }
+    public void addDevelopers (Developer [] developers){
+        this.developers.addAll(Arrays.asList(developers));
+    }
+
+    public void removeDeveloper (int id) {
+        developers.removeIf(p -> p.id == id);
+    }
+
+    public String toString() {
+        return "ScrumTeam{" +
+                "PO=" + PO.name +
+                ", BA=" + BA.name +
+                ", SM=" + SM.name +
+                ", number of developers=" + developers.size() +
+                ", number of testers=" + testers.size() +
+                '}';
     }
 }
+
+/*
+
+ */
