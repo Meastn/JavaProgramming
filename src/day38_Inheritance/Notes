@@ -1,0 +1,102 @@
+
+IS A relation vs. HAS A relation
+
+IS A :
+for is a relation there has to be an inheritance
+
+
+    class Animal {
+    }
+    class dog extends Animal { // dog IS A animal
+    }
+
+
+-----
+    class Employee {
+
+    }
+    class Tester extends Employee { // TESTER IS A EMPLOYEE
+    }
+    }
+
+HAS A:
+When there is no inheritance but a class calls another class they HAS A relation
+
+
+class Tester extends Employee {
+
+}
+
+class ScrumTeam{   // TESTER AND SCRUMTEAM IS NOT A RELATION, but TESTER object is called within ScrumTeam and HAS A RELATION
+    Tester  // SCRUMTEAM HAS A TESTER
+}
+
+class Tiger extends Animal { // IS A relation between Tiger and Animal .. .. TIGER IS AN ANIMAL
+
+}
+class Zoo {  // ZOO HAS A TIGER ... There is a HAS A relation between them
+
+}
+
+
+METHOD OVERLOADING:
+Multiple Methods having SAME NAME but different PARAMETERS
+Return type, access modifier etc. CAN BE different
+Any Method can be overloaded
+
+METHOD OVERRIDING:
+In method overriding we do not have multiple methods but only ONE METHOD.
+    1. It gives different implementations to the method
+    2. One method can have MULTIPLE different IMPLEMENTATIONS
+    3. Overriding a method must take in SUBCLASSES
+    4. It uses LESS MEMORY  and improves the REUSABILITY of our code
+CONDITIONS FOR OVERRIDING:
+    1. Must happen in sub class
+    2. Return type, method name and parameters of the overriden method MUST BE SAME
+    3. Access modifier of the overriden method needs to be SAME or MORE VISIBLE
+    4. We can not override methods with PRIVATE ACCESS modifier, or with STATIC&FINAL specifiers
+    5. Only the instance methods ( not private & final) can be overriden
+
+
+class Animal {
+    public void eat(){  // eat is common between all animals as a method/action but it can be different between species
+    }
+}
+// All animals eat but they eat different things
+dog eat()   food    -- dog eats() dog food
+cat eat () food     -- cat eats() cat food
+fish eat() food     -- fish eats() fish food
+SUPER CLASS
+    SHAPE
+    methods:    area () {}      // COMMON METHODS FOR ALL SHAPES BUT THEIR IMPLEMENTATION IS DIFFERENT
+                perimeter(){}   // OVERRIDE THESE METHODS FOR SUB CLASSES
+SUB CLASSES
+    CIRCLE
+    methods :   area () : radius * radius * pi
+                perimeter () : 2*radius*pi
+    SQUARE
+    methods :   area () : side * side
+                perimeter () : side *4
+    RECTANGLE
+    methods :   area () : width*length
+                perimeter () : 2 * (width + length)
+
+
+----------
+TASK:
+Car :
+    start () {car started}
+
+Toyota extends Car:
+    start () :
+        twist the key for ignition
+Tesla extends Car:
+    start () :
+        say "Start"
+BMW extends Car:
+    start ()
+      call mechanic
+      jump start
+AUDI extends Car:
+    start () :
+      push start button

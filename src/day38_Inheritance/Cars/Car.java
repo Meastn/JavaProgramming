@@ -25,7 +25,7 @@ public class Car {
 
     public String toString() {
         return "Car{" +
-                "brand='" + brand + '\'' +
+                 "brand='" + brand + '\'' +
                 ", model='" + model + '\'' +
                 ", color='" + color + '\'' +
                 ", year=" + year +
