@@ -10,4 +10,10 @@ public class BMW extends Car{
     public void reliable (){
         System.out.println(brand + " is a reliable brand.");
     }
+
+    @Override
+    public void start() {
+        // super.start();
+        System.out.println(brand + " " + model + "       : KICK to start");
+    }
 }

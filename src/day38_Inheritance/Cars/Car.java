@@ -15,12 +15,12 @@ public class Car {
         this.price = price;
     }
 
-    public void start () {
-        System.out.println(brand + model + " has started.");
+    public void start () {  // WE ARE GOING TO OVERRIDE THIS METHOD
+        System.out.println(brand + " "+  model + " is starting.");
     }
 
     public void drive () {
-        System.out.println(brand + model + " has driven " + miles + " miles.");
+        System.out.println(brand + " "+  model + " has driven " + miles + " miles.");
     }
 
     public String toString() {

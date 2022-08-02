@@ -100,3 +100,32 @@ BMW extends Car:
 AUDI extends Car:
     start () :
       push start button
+
+
+TASK 2:
+SHAPE:
+    Variable    : name
+    Add a constructor to set the field
+    Encapsulate the field
+    Methods:
+        area () {return 0}
+        perimeter () {return 0}
+        toString () : name, area, perimeter
+
+CIRCLE:
+    Variables       :  r, pi
+                    Encapsulate the fields
+    Methods:
+        toString () : name, r, pi, area, perimeter
+
+SQUARE:
+    Variables       : s
+                    Encapsulate the field
+    Methods:
+        toString () : name, s, area, perimeter
+
+ RECTANGLE :
+    Variables       : l, w
+                    Encapsulate the fields
+    Methods :
+        toString () : name, l, w, area, perimeter

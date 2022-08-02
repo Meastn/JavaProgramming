@@ -7,4 +7,10 @@ public class Toyota extends Car{
     public void autoPilot (){
         System.out.println(brand + " " + " can go in auto pilot mode. ");
     }
+
+    //OVERRIDING CAR/START
+
+    public void start () {
+        System.out.println(brand + " " + model + " : TURN THE KEY to start ");
+    }
 }

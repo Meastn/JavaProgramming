@@ -11,9 +11,9 @@ public class CarRace {
         System.out.println("car2 = " + car2);
         System.out.println("car1 = " + car1);
 
-        car1.reliable();
+        car1.start();
         car2.start();
-        car3.drive();
+        car3.start();
 
     }
 
