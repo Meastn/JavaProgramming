@@ -4,8 +4,8 @@ public class Shape {
 
     private String name;
 
-    private double area;
-    private double perimeter;
+   // private double area;
+    //private double perimeter;
 
     public String getName() {
         return name;
@@ -16,14 +16,15 @@ public class Shape {
             System.err.println("Name can not be null");
             System.exit(1);
         }
-        this.name = name;
+
         if (name.isEmpty() || name.isBlank()) {
             System.err.println("Invalid name");
-            System.exit(1);
+            System.exit(1); // 1 means there is some issue with the code
         }
+        this.name = name;
     }
 
-
+/*
     public double getArea() {
         return area;
     }
@@ -40,8 +41,10 @@ public class Shape {
         this.perimeter = perimeter;
     }
 
+
+ */
     public Shape(String name) {
-        this.name = name;
+        setName(name);
     }
 
 
@@ -57,8 +60,8 @@ public class Shape {
     public String toString() {
         return "Shape{" +
                 "name='" + name + '\'' +
-                ", area=" + area +
-                ", perimeter=" + perimeter +
+                ", area=" + area() +
+                ", perimeter=" + perimeter() +
                 '}';
     }
 }

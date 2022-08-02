@@ -2,40 +2,59 @@ package day39_Recap_Encapsulation_Inheritance.Shapes.Shapes;
 
 public class Circle extends Shape {
 
-    public double r;
+    private double radius;
     private static double pi;
 
     static {
         pi = 3.14;
     }
 
-    public Circle(String name, double r) {
-        super(name);
-        this.r = r;
+    public double getRadius() {
+        return radius;
+    }
+
+    public void setRadius(double radius) {
+        if (radius <= 0) {
+            System.err.println("Invalid radius for " + getName() + " : " + radius);
+            System.exit(1);
+        }
+        this.radius = radius;
+    }
+
+    public static double getPi() {
+        return pi;
+    }
+
+    public static void setPi(double pi) {
+        Circle.pi = pi;
+    }
+
+    public Circle(double radius) {
+        super("Circle");
+        setRadius(radius);
     }
 
     @Override
     public double area() {
-        double area = r * r * pi;
-        System.out.println(area);
-        return area;
+        return radius * radius * pi;
+
 
     }
 
-    public double perimeter () {
-        double perimeter = 2 * r * pi;
-        System.out.println(perimeter);
-        return perimeter;
+    @Override
+    public double perimeter() {
+
+        return 2 * radius * pi;
 
     }
 
     @Override
     public String toString() {
         return "Circle{" +
-                "r=" + r +
+                "r=" + radius +
                 ", pi=" + pi +
-                ", area=" + getArea() +
-                ", perimeter=" + getPerimeter() +
+                ", area=" + area() +
+                ", perimeter=" + perimeter() +
                 '}';
     }
 }

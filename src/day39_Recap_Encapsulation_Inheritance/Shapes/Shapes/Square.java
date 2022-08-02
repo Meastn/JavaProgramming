@@ -4,32 +4,41 @@ import day39_Recap_Encapsulation_Inheritance.Shapes.Shapes.Shape;
 
 public class Square extends Shape {
 
-    public double s;
+    private double side;
 
-    public Square(String name, double s) {
-        super(name);
-        this.s = s;
+    public double getSide() {
+        return side;
+    }
+
+    public void setSide(double side) {
+        if (side <= 0) {
+            System.err.println("Invalid side for " + getName() + " :" + side);
+            System.exit(1);
+        }
+        this.side = side;
+    }
+
+    public Square(double side) {
+        super("Square");
+        setSide(side);
     }
 
     @Override
     public double area() {
-        double area = s*s;
-        System.out.println(area);
-        return  area;
+        return side*side;
     }
 
+    @Override
     public double perimeter () {
-        double perimeter = s*4;
-        System.out.println(perimeter);
-        return perimeter;
+        return side*4;
     }
 
     @Override
     public String toString() {
         return "Square{" +
-                "s=" + s +
-                ", area=" + getArea() +
-                ", perimeter=" + getPerimeter() +
+                "s=" + side +
+                ", area=" + area() +
+                ", perimeter=" + perimeter() +
                 '}';
     }
 }

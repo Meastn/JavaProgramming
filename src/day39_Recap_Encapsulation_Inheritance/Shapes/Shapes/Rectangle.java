@@ -2,24 +2,53 @@ package day39_Recap_Encapsulation_Inheritance.Shapes.Shapes;
 
 public class Rectangle extends Shape {
 
-    public double l, w;
+    private double length, width;
 
-    public Rectangle(String name, double l, double w) {
-        super(name);
-        this.l = l;
-        this.w = w;
+    public double getLength() {
+        return length;
     }
 
-    public double area () {
-        double area = l*w;
-        System.out.println(area);
-        return area;
+    public void setLength(double length) {
+        if (length <= 0) {
+            System.err.println("Invalid side for " + getName() + " :" + length);
+            System.exit(1);
+        }
+        this.length = length;
     }
 
-    public double perimeter () {
-        double perimeter = 2 * (l+w);
-        System.out.println(perimeter);
-        return perimeter;
+    public double getWidth() {
+        return width;
     }
 
+    public void setWidth(double width) {
+        if (width <= 0) {
+            System.err.println("Invalid side for " + getName() + " :" + width);
+            System.exit(1);
+        }
+        this.width = width;
+    }
+
+    public Rectangle(double length, double width) {
+        super("Rectangle");
+        setLength(length);
+        setWidth(width);
+    }
+
+    @Override
+    public double area() {
+       return  length * width;
+    }
+
+    @Override
+    public double perimeter() {
+        return 2 * (length + width);
+    }
+
+    @Override
+    public String toString() {
+        return "Rectangle{" +
+                "length=" + getLength() +
+                ", width=" + getWidth() +
+                '}';
+    }
 }
