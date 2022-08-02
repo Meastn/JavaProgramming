@@ -3,10 +3,11 @@ package day39_Recap_Encapsulation_Inheritance.Shapes.Shapes;
 public class Circle extends Shape {
 
     private double radius;
-    private static double pi;
+    public static double pi;
 
     static {
-        pi = 3.14;
+        pi = 3.1415926535;
+
     }
 
     public double getRadius() {

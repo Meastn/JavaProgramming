@@ -7,6 +7,6 @@ public class ScrumMaster extends Employee{
     }
 
     public void manageProject (){
-        System.out.println(jobTitle + " " + name + "is managing the project ");
+        System.out.println(getJobTitle() + " " + getName() + "is managing the project ");
     }
 }

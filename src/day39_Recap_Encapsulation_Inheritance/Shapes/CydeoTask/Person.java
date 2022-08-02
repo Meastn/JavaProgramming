@@ -1,6 +1,7 @@
-package day37_Inheritance.ScrumTask;
+package day39_Recap_Encapsulation_Inheritance.Shapes.CydeoTask;
 
 public class Person {
+
     private String name;
     private int age;
     private char gender;
@@ -10,6 +11,10 @@ public class Person {
     }
 
     public void setName(String name) {
+        if (name == null || name.isBlank() || name.isEmpty()) {
+            System.out.println("Invalid name entry!");
+            System.exit(1);
+        }
         this.name = name;
     }
 
@@ -18,6 +23,10 @@ public class Person {
     }
 
     public void setAge(int age) {
+        if (age <= 10 || age > 75) {
+            System.out.println("Invalid age!");
+            System.exit(1);
+        }
         this.age = age;
     }
 
@@ -26,6 +35,10 @@ public class Person {
     }
 
     public void setGender(char gender) {
+        if (gender != 'F' || gender != 'M'){
+            System.out.println("Invalid gender entry!");
+            System.exit(1);
+        }
         this.gender = gender;
     }
 
@@ -35,12 +48,16 @@ public class Person {
         setGender(gender);
     }
 
-    public void eat(String food) {  // THIS METHOD USES AN INSTANCE VARIABLE (NAME) THEREFORE CAN NOT BE A STATIC METHOD
-        System.out.println(name + " is eating " + food);
+    public void eat() {
+        System.out.println(name + " eats meal");
     }
 
-    public void drink(String drink) { // THIS METHOD USES AN INSTANCE VARIABLE (NAME) THEREFORE CAN NOT BE A STATIC METHOD
-        System.out.println(name + " is drinking " + drink);
+    public void sleep() {
+        System.out.println(name + " sleeps");
+    }
+
+    public void drink() {
+        System.out.println(name + " drinks");
     }
 
     public String toString() {

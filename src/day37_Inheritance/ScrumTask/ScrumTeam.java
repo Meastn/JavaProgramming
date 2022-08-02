@@ -28,7 +28,7 @@ public class ScrumTeam {
     }
 
     public void removeTester (int id) {
-        testers.removeIf(p -> p.id == id);
+        testers.removeIf(p -> p.getId() == id);
     }
     public void addDeveloper(Developer developer) {
         developers.add(developer);
@@ -38,14 +38,14 @@ public class ScrumTeam {
     }
 
     public void removeDeveloper (int id) {
-        developers.removeIf(p -> p.id == id);
+        developers.removeIf(p -> p.getId() == id);
     }
 
     public String toString() {
         return "ScrumTeam{" +
-                "PO=" + PO.name +
-                ", BA=" + BA.name +
-                ", SM=" + SM.name +
+                "PO=" + PO.getName() +
+                ", BA=" + BA.getName() +
+                ", SM=" + SM.getName() +
                 ", number of developers=" + developers.size() +
                 ", number of testers=" + testers.size() +
                 '}';

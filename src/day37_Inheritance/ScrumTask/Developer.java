@@ -7,10 +7,10 @@ public class Developer extends Employee{
     }
 
     public void coding (){
-        System.out.println(jobTitle + " " + name + " is coding");
+        System.out.println(getJobTitle() + " " + getName() + " is coding");
     }
 
     public void fixBugs (){
-        System.out.println(jobTitle + " " + name + " is fixing bugs");
+        System.out.println(getJobTitle() + " " + getName() + " is fixing bugs");
     }
 }

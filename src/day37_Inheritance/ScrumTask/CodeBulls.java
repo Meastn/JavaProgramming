@@ -27,11 +27,11 @@ public class CodeBulls {
         System.out.println("scrumTeam = " + scrumTeam);
 
         for (Tester tester : scrumTeam.testers) {
-            System.out.println(tester.name + " : " + tester.salary);
+            System.out.println(tester.getName() + " : " + tester.getSalary());
         }
 
         for (Developer developer : scrumTeam.developers) {
-            System.out.println(developer.name + " : " + developer.salary + " : " + developer.jobTitle);
+            System.out.println(developer.getName() + " : " + developer.getSalary());
         }
     }
 }

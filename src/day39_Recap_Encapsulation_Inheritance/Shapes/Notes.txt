@@ -1,0 +1,44 @@
+TASK
+
+1) Create a class named Person
+
+variables:
+        name,
+        age,
+        gender
+    Encapsulate all tne fields
+    Add a constructor to set all fields
+Methods:
+        eat()
+        sleep ()
+        drink ()
+        toString ()
+
+2)  Create a subclass of Person named Employee
+Extra variables:
+        employeeID, jobTitle, salary
+         Encapsulate all tne fields
+         Add a constructor to set all fields
+Methods :
+        work()
+        toString()
+
+3) Create a subclass of Employee called Tester
+    Override the work() method
+    Add Extra Methods :
+        createTicket()
+
+4) Create a subclass of Employee called Developer
+       Override the work() method
+       Add Extra Methods :
+           fixingBugs()
+5) Create a subclass of Employee called Teacher
+       Override the work() method
+5) Create a subclass of Person called Student
+     Extra variables:
+            studentID, fieldOfStudy,
+            Encapsulate all tne fields
+            Add a constructor to set all fields
+       Override the work() method
+     Extra Methods:
+            study ()
