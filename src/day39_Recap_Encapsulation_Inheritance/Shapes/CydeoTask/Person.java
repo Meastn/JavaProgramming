@@ -24,7 +24,7 @@ public class Person {
 
     public void setAge(int age) {
         if (age <= 10 || age > 75) {
-            System.out.println("Invalid age!");
+            System.err.println("Invalid age!");
             System.exit(1);
         }
         this.age = age;
@@ -35,7 +35,7 @@ public class Person {
     }
 
     public void setGender(char gender) {
-        if (gender != 'F' || gender != 'M'){
+        if (gender != 'F' && gender != 'M'){
             System.out.println("Invalid gender entry!");
             System.exit(1);
         }
