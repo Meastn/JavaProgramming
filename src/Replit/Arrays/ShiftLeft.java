@@ -1,4 +1,4 @@
-package Replit;
+package Replit.Arrays;
 
 import java.util.Arrays;
 import java.util.Scanner;

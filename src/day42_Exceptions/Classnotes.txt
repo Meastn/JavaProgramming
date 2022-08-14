@@ -1,0 +1,22 @@
+
+EXCEPTION HANDLING
+
+When there is an exception the code stops
+working. Therefore we can not see what
+is happening to the rest of the code.
+We need it to run until the end.
+So we handle exceptions to keep the code
+running even in case of an exception.
+There are two types of exceptions:
+    1. checked exception
+    2. unchecked exception
+
+Exception is a java object of the THROWABLE class.
+NOTE: We also can throw and exception MANUALLY if we want.
+
+What is the difference between an error and
+exception?
+Runtime errors are due to bad coding
+Compile time errors: your codes does not even Compile
+
+WE DO NOT USUALLY HANDLE BAD CODING (try & catch)
