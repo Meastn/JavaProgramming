@@ -16,13 +16,13 @@ public class Arrays2DLargest {
         int[][] arr = new int[rows][cols];
         for (int i = 0; i <= rows - 1; i++) {
             int max= arr[i][0];
-            int j1=0;
+            //int j1=0;
             for (int j = 0; j <= cols - 1; j++) {
                 arr[i][j] = inp.nextInt();
                 if(max<arr[i][j]){
 
                     max= arr[i][j];
-                    j1=j;
+                   // j1=j;
                 }
 
             }//end for cols
