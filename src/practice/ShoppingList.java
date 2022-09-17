@@ -1,11 +1,14 @@
 package practice;
 
 public class ShoppingList {
-
+    public static void denemeMethod (){
+        System.out.println("deneme method");
+    }
     public static void main(String[] args) {
 
         String item1, item2, item3;
         double price1, price2, price3;
+
 
         item1 = "Tomatoe";
         item2 = "Potatoes";

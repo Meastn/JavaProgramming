@@ -1,6 +1,6 @@
 package day44_Abstraction_Interface.Zoo;
 
-public final class Dog extends Animal{
+public final class Dog extends Animal implements Playable{
 
     public void eat () {
         System.out.println(getName() + " eats dog food.");
@@ -14,4 +14,8 @@ public final class Dog extends Animal{
         System.out.println(getName() + " barks just like other dogsd");
     }
 
+    @Override
+    public void play() {
+        System.out.println(getName() + "plays with people");
+    }
 }

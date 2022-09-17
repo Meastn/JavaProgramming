@@ -1,8 +1,8 @@
 package day38_Inheritance.Cars;
 
 public class Tesla extends Car{
-    public Tesla(String model, String color, int year, int miles, double price) {
-        super("Tesla", model, color, year, miles, price);
+    public Tesla(String model, int year, double price, String color, int miles) {
+        super("Tesla", model, year, price, color, miles);
     }
 
     public void breaksDown(){

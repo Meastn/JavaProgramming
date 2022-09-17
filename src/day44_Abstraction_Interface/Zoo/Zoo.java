@@ -7,7 +7,7 @@ public class Zoo {
 
         Tiger tiger = new Tiger ("Grizzly", "Siberian", 'M', 12, 'L', "Orange-Black");
         System.out.println(mioww);
-
+        tiger.hunt();
         System.out.println(tiger.getName() + " is a " + tiger.getSize() + " " + tiger.getGender() + " tiger");
 
     }

@@ -66,7 +66,8 @@ public abstract class Animal {
     }
 // Abstract methods common to all animals
     public  abstract void eat(); // each animal eats different things so it needs multiple differend implementations therefore we
-    // we use the abstract method without a bodyss
+    // we use the abstract method without a body
+
     public final void drink(){ // if method is acted exactly the same by all subclasses than it can be final and unchangeable
         System.out.println(name + " drinks water like all other animals");
     }
@@ -84,4 +85,5 @@ public abstract class Animal {
                 ", color='" + color + '\'' +
                 '}';
     }
+
 }

@@ -2,10 +2,10 @@ package day38_Inheritance.Cars;
 
 public class BMW extends Car{
 
-    public BMW(String model, String color, int year, int miles, double price) {
-        super("BMW", model, color, year, miles, price);
-    }
+    public BMW(String model, int year, double price, String color, int miles) {
+        super("BMW",model, year, price, color, miles);
 
+    }
 
     public void reliable (){
         System.out.println(brand + " is a reliable brand.");

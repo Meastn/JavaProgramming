@@ -6,13 +6,14 @@ public class Car {
     public int year, miles;
     public double price;
 
-    public Car(String brand, String model, String color, int year, int miles, double price) {
+    public Car( String brand, String model, int year, double price,  String color,  int miles) {
         this.brand = brand;
         this.model = model;
-        this.color = color;
         this.year = year;
-        this.miles = miles;
         this.price = price;
+        this.color = color;
+        this.miles = miles;
+
     }
 
     public void start () {  // WE ARE GOING TO OVERRIDE THIS METHOD
